@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Franco Oubel - Contacto</title>
+    <link rel="icon" href="https://img.icons8.com/ios/50/000000/business-network--v2.png" type="image/icon type">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container logo-nav-container">
+        <a href="./index.html" class="logo">Franco Oubel</a>
+        <span class="menu-icon">Ver menú</span>
+        <nav class="navigation">
+          <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./educacion.html">Educación</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div id="main-title-container">
+          <h1 id="contact-main-title">¡Trabajemos juntos!</h1>
+        </div>
+
+        <div class="wrapper">
+          <div class="map-content">
+            <h1 id="form-title">Contactame</h1>
+            <form action="enviar.php" name="form" method="POST">
+              <div class="twice-two">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="nombre"
+                  id="nombre"
+                  placeholder="Nombre"
+                  required
+                />
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+
+              <div class="twice">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="asunto"
+                  id="asunto"
+                  placeholder="Asunto"
+                  required
+                />
+              </div>
+
+              <textarea
+                name="mensaje"
+                class="form-control"
+                id="mensaje"
+                placeholder="Escribí tu mensaje"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn-contact" value="submit" name="submit">
+                Enviar mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p>Franco Oubel</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

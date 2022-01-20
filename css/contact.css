@@ -1,0 +1,162 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#main-title-container {
+  display: flex;
+  justify-content: center;
+}
+
+#form-title {
+  margin-bottom: 0.5em;
+}
+
+.map-content {
+  padding: 1em;
+  width: 30em;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+}
+
+.wrapper {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .wrapper {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #contact-main-title {
+    margin-top: 2em;
+    text-align: center;
+  }
+}
+
+
+button {
+  outline: none;
+  appearance: none;
+}
+
+button, .btn {
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.twice {
+  margin-bottom: 20px;
+}
+
+.twice-two {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+}
+
+.map-content form input,
+.map-content form textarea {
+  background: #f8f9fa;
+  border: 2px solid rgba(216, 216, 216, 0.3);
+  color: #777;
+  font-size: 16px;
+  padding: 12px 15px;
+  width: 100%;
+  border-radius: 4px;
+  height: 55px;
+}
+
+.map-content form textarea {
+  resize: none;
+  min-height: 140px;
+}
+
+.map-content form input:focus,
+.map-content form textarea:focus {
+  outline: none;
+  border: 2px solid #051b35;
+  background: #fff;
+  box-shadow: none;
+}
+
+button.btn-contact {
+  border: none;
+  font-size: 16px;
+  padding: 15px 30px;
+  margin: 20px auto 0;
+  color: #fff;
+  background: #333;
+  border-color: #333;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: background 0.5s ease;
+}
+
+button.btn-contact:hover{
+  background: #3866ac;
+}
+
+
+/* contact1-responsive */
+@media(max-width: 992px) {
+
+  .map-content {
+    margin-top: 40px;
+    width: 22em;
+  }
+}
+
+@media(max-width: 480px) {
+  .twice-two {
+    grid-template-columns: 1fr;
+  }
+
+  button.btn-contact {
+    width: 100%;
+  }
+
+  .map-content {
+    margin-top: 40px;
+    width: 18em;
+    margin-left: -1.5em;
+  }
+}
